@@ -1,115 +1,91 @@
-
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
+### DATE: 26.04.2025                                                                     
 ### REGISTER NUMBER : 212222040142
-
+---
 ### Aim: 
 Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 
 ### Algorithm:  
 The goal of this experiment is to design and develop an AI-powered chatbot that can handle customer inquiries, provide support, and improve customer experience in a retail environment. Create prompts using various AI prompting techniques to guide your experiment, data collection, analysis, and report creation
 
-## 1. Scenario Design & Data Collection
- 1. Technique: Role Prompting
-Prompt Example:
+### Prompting Techniques by Stage
+#### 1. Experiment Design
+#### Broad/Naïve Prompting:
 
-You are a retail customer experiencing difficulty tracking your order. Ask the chatbot for help in a polite but urgent tone.
+“What services should a retail chatbot offer?”
 
-Purpose: Simulate varied customer emotions and tones for chatbot training data.
+#### Specific Prompting:
 
- 2. Technique: Few-Shot Prompting
-Prompt Example:
+“Name 5 customer support features for an e-commerce chatbot.”
 
-Customer: “Where’s my order?”
-Bot: “Let me check that for you. Can you share your order ID?”
-Customer: “Here’s my ID: 123456”
-Bot: “Thanks! Your order is out for delivery and should arrive by 7 PM today.”
+#### Scenario-Based Prompting:
 
-Purpose: Generate synthetic conversations for training and evaluation datasets.
+“Imagine a customer looking for a late delivery update. How should the chatbot respond?”
 
-## 2. Model Training & Experimentation
- 1. Technique: Chain-of-Thought Prompting
-Prompt Example:
+#### 2. Data Collection
+#### Role Prompting:
 
-A customer wants to return a damaged item. First, ask for the order ID. Then, verify the return policy. Finally, offer return instructions.
+“You are a frustrated customer—ask about your order.”
 
-Purpose: Train the model to follow logical support flows.
+#### Few-Shot Prompting:
 
- 2. Technique: Instruction Prompting
-Prompt Example:
+Provide short back-and-forth sample conversations for data synthesis.
 
-Given a user query, classify it as one of the following: Order Status, Return Request, Product Inquiry, Store Info, Complaint.
+#### Survey Prompts:
 
-Purpose: Enhance intent classification using direct task instructions.
+“Rate your experience from 1-10.”
 
-## 3. Data Analysis & Evaluation
- 1. Technique: Zero-Shot Prompting
-Prompt Example:
+#### Follow-Up Prompts:
 
-Classify the customer query: “Can you tell me if this product comes in red?”
+“If the chatbot didn’t help, what went wrong?”
 
-Purpose: Test the chatbot’s generalization capabilities on unseen query types.
+#### 3. Model Training
+Instruction Prompting:
 
- 2. Technique: Reflexive Prompting (Self-Critique)
-Prompt Example:
+“Classify queries into: Order Status, Product Info, Complaints.”
 
-Here is the chatbot’s response: “Sorry, I can’t help you.”
-Evaluate whether this reply is helpful, and suggest a better alternative.
+#### Chain-of-Thought Prompting:
 
-Purpose: Evaluate model performance and improve response relevance.
+Step-by-step handling of complaints (e.g., ask for ID, check eligibility, respond).
 
-## 4. Report Creation
- 1. Technique: Persona Prompting
-Prompt Example:
+#### Zero-Shot Prompting:
 
-You are an AI researcher presenting findings to retail business stakeholders. Summarize the performance of the chatbot in layman’s terms.
+Classify unseen queries without examples to test generalization.
 
-Purpose: Make the report accessible to non-technical readers.
+#### 4. Evaluation & Analysis
+Reflexive Prompting:
 
- 2. Technique: Comparative Prompting
-Prompt Example:
+Ask the AI to critique its own response and offer a better one.
 
-Compare the chatbot’s performance before and after using fine-tuned intent classification. Use metrics like accuracy, response time, and satisfaction rate.
+#### Comparative Prompting:
 
-Purpose: Support claims with clear data comparisons.
+“Compare chatbot accuracy before and after fine-tuning.”
 
-## Experiment Workflow Summary
+#### Data Synthesis Prompts:
 
-1. Stage	Prompt Type	Purpose
-2. Scenario Design	Role, Few-shot	Generate synthetic customer conversations
-3. Model Training	Chain-of-Thought, Instruction	Improve flow and intent handling
-4. Evaluation	Zero-shot, Reflexive	Test generalization and improve responses
-5. Report Generation	Persona, Comparative	Summarize and present findings effectively
+“List top features users requested.”
 
- ## Final Report Structure (Suggested)
-1. Introduction
+#### 5. Report Creation
+#### Persona Prompting:
 
-2. Aim, background, chatbot purpose
+“Explain performance findings to retail managers in simple terms.”
 
-3. Prompt Design
+#### Summary Prompting:
 
-4. Types of prompts used and their roles
+“Summarize key issues users faced with the chatbot.”
 
-5. Data Collection
+#### Recommendation Prompting:
 
-6. Methods and sources
+“Based on feedback, suggest 3 improvements.”
 
-7. Model Implementation
+#### Experiment Workflow Table:
 
-8. Architecture, training methods, tools
+![image](https://github.com/user-attachments/assets/940f09bf-80b3-4574-bb6d-e12385ca47c8)
 
-9. Evaluation Metrics
+#### Findings:
+User Needs Identified
+Prompt Techniques Effectiveness
+Chatbot Accuracy, Relevance, and Response Time
 
-10. Accuracy, F1-score, customer satisfaction
-
-11. Findings & Analysis
-
-12. Observations from prompt impact
-
-13. Conclusion & Recommendations
-
-14. Improvement areas and future work
-
-
-## Result:
-Thus the Prompts were exected succcessfully .
+# Result: 
+Thus the Prompts were exected succcessfully.
